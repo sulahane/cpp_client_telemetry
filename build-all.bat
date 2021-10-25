@@ -3,7 +3,7 @@
 cd %~dp0
 call tools\gen-version.cmd
 @setlocal ENABLEEXTENSIONS
-
+set SKIP_DEBUG_BUILD=true
 echo Update all public submodules...
 git -c submodule."lib/modules".update=none submodule update --init --recursive
 
