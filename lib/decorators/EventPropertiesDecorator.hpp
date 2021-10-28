@@ -114,9 +114,9 @@ namespace MAT_NS_BEGIN {
                 record.data.push_back(data);
             }
 
-            auto timestamp = eventProperties.GetTimestamp();
-            if (timestamp != 0)
-                record.time = timestamp;
+            //auto timestamp = eventProperties.GetTimestamp();
+            //if (timestamp != 0)
+            //    record.time = timestamp;
 
             record.popSample = eventProperties.GetPopSample();
 
